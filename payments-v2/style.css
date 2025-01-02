@@ -12,3 +12,41 @@
         width: 100%;
     }
 }
+
+footer {
+    background-color: #34495e; /* 어두운 블루 계열 배경 */
+    color: white; /* 글씨 색을 흰색으로 */
+    padding: 30px 20px; /* 위 아래 30px, 좌우 20px 여백 */
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-top: 40px;
+}
+
+footer h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #ecf0f1; /* 링크 색상 */
+    text-decoration: none;
+    transition: color 0.3s ease; /* 색상 변경 효과 */
+}
+
+footer a:hover {
+    color: #f39c12; /* 마우스 오버 시 색상 변화 */
+}
+
+footer b {
+    font-weight: bold;
+}
+
+footer .footer-info {
+    font-size: 0.8em;
+    color: #bdc3c7;
+}
