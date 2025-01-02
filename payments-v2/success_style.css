@@ -1,0 +1,66 @@
+
+/* 성공 타이틀 */
+.success_title h1 {
+    font-size: 2em;
+    color: #2c3e50; /* 검은색 제목 */
+    margin-bottom: 20px;
+    text-align: center; /* 중앙 정렬 */
+}
+
+/* 성공 폼 */
+.success_form {
+    margin-bottom: 20px;
+}
+
+.success_form_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.success_inner_title {
+    font-weight: bold;
+    color: #7f8c8d;
+}
+
+.success_inner_value {
+    font-size: 1.2em; /* 약간 더 큰 글씨로 강조 */
+    font-weight: bold; /* 굵은 글씨로 강조 */
+    color: #e74c3c; /* 눈에 띄는 빨간색 */
+    text-align: right; /* 텍스트를 오른쪽 정렬 */
+}
+
+/* 성공 버튼 */
+.success_buttons {
+    display: flex;
+    justify-content: space-between; /* 버튼을 가로로 배치하고 일정 간격 유지 */
+    gap: 10px; /* 버튼 간의 간격 */
+    margin-top: 20px;
+}
+
+.success_buttons button {
+    flex: 1; /* 버튼이 동일한 너비로 분배되도록 설정 */
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.success_buttons button:hover {
+    background-color: #2980b9;
+}
+
+.success_buttons button:active {
+    background-color: #1c6ea4;
+}
