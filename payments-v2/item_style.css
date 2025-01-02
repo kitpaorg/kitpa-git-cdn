@@ -1,0 +1,138 @@
+/* 공통 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.item-container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* 타이틀 스타일 */
+.item_title h1 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 상세 내용 */
+.item_detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 이미지 */
+.item_image img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 폼 */
+.item_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item_form label {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.item_form input,
+.item_form select,
+.item_form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.item_form #submit {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item_form button:hover {
+    background-color: #2980b9;
+}
+
+.item_form_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* 레이블과 입력 필드 사이의 간격 */
+    margin-bottom: 15px; /* 필드 간격 */
+}
+
+.item_form_inner label {
+    font-weight: bold;
+    color: #34495e; /* 진한 블루 계열로 가독성 향상 */
+}
+
+.item_form_inner input,
+.item_form_inner select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item_form_inner input:focus,
+.item_form_inner select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    outline: none;
+}
+
+.item_form_amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.item_form_amount div:first-child {
+    color: #7f8c8d; /* 설명 텍스트 색상 */
+    font-weight: normal;
+}
+
+.item_form_amount div:last-child {
+    color: #e74c3c; /* 금액 강조 색상 */
+}
+
+
+/* 반응형 처리 */
+@media (min-width: 720px) {
+    .item_detail {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .item_image {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .item_form {
+        flex: 1;
+    }
+}
