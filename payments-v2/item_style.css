@@ -117,6 +117,7 @@ body {
 
 .item_form_amount div:last-child {
     color: #e74c3c; /* 금액 강조 색상 */
+    text-align: right;
 }
 
 
