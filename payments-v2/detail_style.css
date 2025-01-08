@@ -1,0 +1,33 @@
+
+#mobile {
+    display: none;
+}
+#non_mobile {
+    display: block;
+}
+
+.bi.bi-copy {
+    cursor: pointer;
+    color: #007bff; /* 기본 색상 */
+    font-size: 1rem; /* 아이콘 크기 */
+    margin-left: 5px; /* 텍스트와 간격 */
+    transition: color 0.2s ease-in-out;
+}
+
+.bi.bi-copy:hover {
+    color: #0056b3; /* 마우스 오버 시 색상 */
+}
+
+.bi.bi-copy:active {
+    color: #003f7f; /* 클릭 시 색상 */
+}
+
+@media screen and (max-width: 1200px) {
+    #non_mobile {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+}
+
